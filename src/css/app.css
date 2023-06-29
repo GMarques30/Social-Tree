@@ -6,14 +6,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-.btn {
+.btn .icon {
   border: none;
   cursor: pointer;
-  text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .profile .container {
@@ -29,7 +32,7 @@ li {
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 50%;
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background: url("../img/profile-picture.svg"), lightgray 50%/cover no-repeat;
 }
 .profile .container .profile-title {
   color: 13131A;
@@ -86,6 +89,13 @@ body {
   align-items: center;
   gap: 1.5rem;
   flex-shrink: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
