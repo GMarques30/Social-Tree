@@ -1,0 +1,17 @@
+@use '../1-base/variables'
+
+@mixin container
+    max-width: calc( 640px - 24px )
+    margin: auto
+
+
+@mixin btn
+    display: flex
+    width: 19.5rem
+    height: 2.8125rem
+    padding: 1rem 3rem
+    justify-content: space-between
+    align-items: center
+    flex-shrink: 0
+    border-radius: 3.125rem
+    background-color: variables.$bg-btn-color

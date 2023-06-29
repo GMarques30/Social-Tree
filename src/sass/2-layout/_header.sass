@@ -1,0 +1,32 @@
+@use '../1-base/variables'
+@use '../2-layout/_layout-mixins'
+
+.profile
+
+    .container
+        @include layout-mixins.container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 0.5rem
+        
+        .profile-image
+            width: 6.25rem
+            height: 6.25rem
+            border-radius: 50%
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat
+        
+        .profile-title
+            color: variables.$primary-color
+            font-size: 2rem
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+        
+        .profile-description
+            color: variables.$primary-color
+            font-size: 1rem
+            font-style: normal
+            font-weight: 300
+            line-height: normal

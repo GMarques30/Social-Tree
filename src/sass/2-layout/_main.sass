@@ -1,0 +1,25 @@
+@use '../1-base/variables'
+@use '../2-layout/layout-mixins'
+
+.links
+    .container
+        @include layout-mixins.container
+
+        .social-list
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 1rem
+
+            .btn
+                @include layout-mixins.btn
+                color: white
+                font-size: 0.875rem
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                text-transform: uppercase
+
+            img
+                margin-top: 0.4rem
